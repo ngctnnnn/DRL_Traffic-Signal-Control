@@ -51,9 +51,9 @@ in which: $Q(s,a)$ is the q-value on taking action $a$ at state $s$, $s'$ and $a
 #### Deep Q-Network
 - As contemporary problems in real life require too many computational resources and memories for Q-table to handle, \textit{Deep Q-Network} (DQN) \cite{dqn} is proposed as a combined version of traditional Q-learning and neural network. DQN could solve more complex problems with fewer memories and computational hardware while still maintaining efficiency. In the case of DQN, we use a deep neural network to approximate Q-values instead of updating manually via Q-table via Equation below.
 
-```math
+$$
 Q^\pi(s,a) = \mathcal{R} + \gamma \text{ } \underset{a'}{\max} Q^\pi(s', a')
-```
+$$
 
 where: $Q^\pi(s, a)$ is the Q-value predicted by the deep neural network.
 
@@ -62,9 +62,9 @@ where: $Q^\pi(s, a)$ is the Q-value predicted by the deep neural network.
 #### Double Deep Q-Network
 - *Double Deep Q-Network* (DoubleDQN), which is a deep learning-based improvement from the original DQN and Q-Learning, uses an additional network called $\phi$-network to reduce over-estimations and strengthen performance on many different environments. The formulation of DoubleDQN is demonstrated as in Equation:
 
-```math
+$$
     Q^\pi(s,a) = \mathcal{R} + \gamma \text{ } Q^\phi\left(s', \underset{a'}{\max}Q^\pi(s',a')\right)
-```
+$$
 
 - Dueling Deep Q-Network (DuelingDQN) is presented to use a dueling architecture which explicitly separates the representation of state values and state-dependent action advantages via two separate streams as demonstrated
 
@@ -106,9 +106,9 @@ Total the differences between total incoming lanes density and total outgoing la
 
     - Reward at time $t$ is defined as follows:
 
-        ```math
+        $$
             \mathcal{R}_t = D_t - D_{t + 1}
-        ```
+        $$
 
         in which, $D_t$ and $D_{t + 1}$ are total waiting time of stopped vehicles at intersections at time $t$ and time $t + 1$, respectively. 
 
