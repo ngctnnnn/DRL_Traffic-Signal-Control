@@ -1,0 +1,11 @@
+# reroute a walk
+car_public_speedFactor
+
+# reroute a walk
+car_public_speedFactor_routingMode
+
+# reroute a walk
+car_public_speedFactor_noTrains
+
+# test intermodal taxi routing
+taxi

@@ -1,0 +1,31 @@
+Warning: Discarding unusable type 'waterway.riverbank' (first occurence for edge '4616435').
+Warning: Discarding unknown compound 'cycleway.track' in type 'cycleway.track|highway.secondary' (first occurence for edge '24214694').
+Warning: Discarding unusable type 'waterway.canal' (first occurence for edge '31233332').
+Warning: Discarding unknown compound 'cycleway.track' in type 'cycleway.track|highway.tertiary' (first occurence for edge '46039050').
+Warning: Discarding unknown compound 'cycleway.track' in type 'cycleway.track|highway.residential' (first occurence for edge '52460499').
+Warning: Discarding unknown compound 'cycleway.lane' in type 'cycleway.lane|highway.unclassified' (first occurence for edge '81096583').
+Warning: Discarding unknown compound 'cycleway.track' in type 'cycleway.track|highway.unclassified' (first occurence for edge '135777010').
+Warning: Discarding unusable type 'highway.construction' (first occurence for edge '190461577').
+Warning: Discarding unusable type 'railway.abandoned' (first occurence for edge '219832513').
+Warning: No way found for reference '48858193' in relation '2439689'
+Warning: Ignoring restriction relation '2439689' with unknown from-way.
+Warning: Reducing junction cluster 1560224141,1560224152,1560224191,1560224195 (5 incoming edges).
+Warning: Found sharp turn with radius 4.30 at the end of edge '-133858467#1'.
+Warning: Found sharp turn with radius 7.22 at the start of edge '-133858467#2'.
+Warning: Found sharp turn with radius 4.30 at the start of edge '133858467#1'.
+Warning: Found sharp turn with radius 4.73 at the start of edge '143308685#1'.
+Warning: Found sharp turn with radius 6.42 at the start of edge '47765615#1'.
+Warning: Found sharp turn with radius 2.04 at the start of edge '70214888#3'.
+Warning: could not find edge for parkingArea '46039050#2s'
+Warning: could not find edge for parkingArea '46039050#3s'
+Warning: could not find edge for parkingArea '46039050#5s'
+Warning: could not find edge for parkingArea '46039050#6s'
+Warning: could not find edge for parkingArea '71028777#1s'
+Warning: Ignoring parking area on edge '142575693#3' due to insufficient space.
+Warning: Ignoring parking area on edge '142575693#4' due to insufficient space.
+Warning: Ignoring parking area on edge '142575693#6' due to insufficient space.
+Warning: Ignoring parking area on edge '143308521#6' due to insufficient space.
+Warning: Ignoring parking area on edge '-143308521#6' due to insufficient space.
+Warning: 9 total messages of type: Discarding unknown compound '%' in type '%' (first occurence for edge '%').
+Warning: 10 total messages of type: Ignoring parking area on edge '%' due to insufficient space.
+Warning: 20 total messages of type: could not find edge for parkingArea '%s'

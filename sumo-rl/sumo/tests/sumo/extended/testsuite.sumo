@@ -1,0 +1,48 @@
+# Tests whether rerouter works; also tests functioning of vehroutes output
+rerouter
+
+# Tests whether variable speed signs work
+variable_speed_signs
+
+# Tests for dua-inc emissions
+inc-dua
+
+# Tests whether wauts (tls program switches) work
+wauts
+
+# Tests whether stops work
+stops
+
+# test waypoint definition (stops with speed > 0)
+waypoints
+
+# vehicle removal via vaporizer
+vaporizer
+
+# Tests whether calibrators work
+calibrator
+
+# Tests for HBEFA-based emission computation
+hbefa
+
+# Tests for bus stops
+busses
+
+# test with bicycles that do not fit anywhere else
+bikes
+
+# test loading of shapes 
+# (relevant for cmd-line sumo since they can be access via TraCI)
+shapes
+
+# saving and loading simulation state
+state
+
+# check options for collision handling (emergencyDecel is disabled here to keep the legacy behavior)
+collisions
+
+# test for using option --max-num-vehicles
+max_num_vehicles
+
+# tests for scaling traffic
+scale

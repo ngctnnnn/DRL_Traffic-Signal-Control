@@ -1,0 +1,71 @@
+> Executing step 0
+>> Running router on input_trips.trips.xml
+>>> Begin time: 2020-08-20 11:13:00.624339
+>>> End time: 2020-08-20 11:13:00.749589
+>>> Duration: 0:00:00.125250
+<<
+>> Running simulation
+>>> Begin time: 2020-08-20 11:13:00.749688
+>>> End time: 2020-08-20 11:13:00.913080
+>>> Duration: 0:00:00.163392
+<<
+< Step 0 ended (duration: 0:00:00.288887)
+------------------
+
+> Executing step 1
+>> Running router on 0/input_trips_000.rou.alt.xml
+>>> Begin time: 2020-08-20 11:13:00.917092
+>>> End time: 2020-08-20 11:13:01.079093
+>>> Duration: 0:00:00.162001
+<<
+>> Running simulation
+>>> Begin time: 2020-08-20 11:13:01.079188
+>>> End time: 2020-08-20 11:13:01.238473
+>>> Duration: 0:00:00.159285
+<<
+< Step 1 ended (duration: 0:00:00.321535)
+------------------
+
+> Executing step 2
+>> Running router on 1/input_trips_001.rou.alt.xml
+>>> Begin time: 2020-08-20 11:13:01.241425
+>>> End time: 2020-08-20 11:13:01.369733
+>>> Duration: 0:00:00.128308
+<<
+>> Running simulation
+>>> Begin time: 2020-08-20 11:13:01.369826
+>>> End time: 2020-08-20 11:13:01.529225
+>>> Duration: 0:00:00.159399
+<<
+< Step 2 ended (duration: 0:00:00.287983)
+------------------
+
+> Executing step 3
+>> Running router on 2/input_trips_002.rou.alt.xml
+>>> Begin time: 2020-08-20 11:13:01.534082
+>>> End time: 2020-08-20 11:13:01.699451
+>>> Duration: 0:00:00.165369
+<<
+>> Running simulation
+>>> Begin time: 2020-08-20 11:13:01.699556
+>>> End time: 2020-08-20 11:13:01.840487
+>>> Duration: 0:00:00.140931
+<<
+< Step 3 ended (duration: 0:00:00.306556)
+------------------
+
+> Executing step 4
+>> Running router on 3/input_trips_003.rou.alt.xml
+>>> Begin time: 2020-08-20 11:13:01.844986
+>>> End time: 2020-08-20 11:13:01.977155
+>>> Duration: 0:00:00.132169
+<<
+>> Running simulation
+>>> Begin time: 2020-08-20 11:13:01.977253
+>>> End time: 2020-08-20 11:13:02.126483
+>>> Duration: 0:00:00.149230
+<<
+< Step 4 ended (duration: 0:00:00.281653)
+------------------
+
+dua-iterate ended (duration: 0:00:01.506377)

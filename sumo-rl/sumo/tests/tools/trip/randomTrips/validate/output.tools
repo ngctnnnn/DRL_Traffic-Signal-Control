@@ -1,0 +1,4 @@
+Success.
+Success.
+calling  /home/kobo/dlr/sumo/bin/duarouter -n net2.net.xml -r trips.trips.xml --ignore-errors --begin 0 --end 100.0 --no-step-log --no-warnings -o routes.rou.xml
+calling  /home/kobo/dlr/sumo/bin/duarouter -n net2.net.xml -r trips.trips.xml --ignore-errors --begin 0 --end 100.0 --no-step-log --no-warnings -o trips.trips.xml.tmp --write-trips

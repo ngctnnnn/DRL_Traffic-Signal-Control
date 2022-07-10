@@ -1,0 +1,68 @@
+# fcd-output involving persons
+persons
+
+# output fcd data in cartesian coordinates
+cartesian
+
+# output fcd data in geo-coordinates
+geo
+
+# check whether slope works
+cartesian_slope
+cartesian_slope_geom
+cartesian_slope_length
+
+# test output of vehicle signals
+signals
+
+# test angle output in all cardinal directions
+angle
+
+# test kilometrage output
+distance
+
+# test kilometrage output
+distance_reverse
+
+# test acceleration output
+acceleration
+
+# write additional parameters
+params
+
+# test caccVehicleMode parameter for CACC CFModel
+params_caccVehicleMode
+subsecond
+
+# output not in every time step
+period
+
+# output not from every vehicle
+explicit_assignment
+
+# output in range around equipped vehicles
+radius
+
+# disable output for all vehicles via option
+disable_all
+
+# correctly compute positions when vehicle is on a short lane
+short_lane
+
+# only write fcd output on some edges
+edge_filter
+
+# output vehicle leader information
+leader
+
+# automatically set precision on long step length
+precision
+
+# filter written attributes
+attributes
+
+# filter written attributes, using those that must otherwise be activated by extra options
+extended_attributes
+
+# filter written attributes with "all"
+all_attributes

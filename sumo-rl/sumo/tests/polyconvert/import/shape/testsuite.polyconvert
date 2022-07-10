@@ -1,0 +1,8 @@
+# behavior without setting an id option
+default
+
+# testing hand drawn shape
+handmade
+
+# behavior with reading projecion from a network
+network

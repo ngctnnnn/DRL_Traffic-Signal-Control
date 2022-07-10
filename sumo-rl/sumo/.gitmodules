@@ -1,0 +1,10 @@
+[submodule "tools/contributed/traci4matlab"]
+	path = tools/contributed/traci4matlab
+	url = https://github.com/pipeacosta/traci4matlab
+	ignore = untracked
+[submodule "build/brew"]
+	path = build/brew
+	url = https://github.com/DLR-TS/homebrew-sumo
+[submodule "tools/contributed/saga"]
+	path = tools/contributed/saga
+	url = https://github.com/lcodeca/SUMOActivityGen

@@ -1,0 +1,35 @@
+# 10 vehicles driving in a queue. The first one stops for a while and then all vehicles start up again
+queue_stop_start_lowAccel
+
+# test speeds when stopping at exact position
+stop_exact
+
+# test speeds when stopping at exact position
+stop_exact_lowDecel
+
+# test speeds when stopping at exact position
+stop_exact_subsecond
+
+# test speeds when stopping at exact position
+stop_exact_laneEnd
+
+# test speeds when stopping at exact position
+stop_exact_laneEnd_subSecond
+
+# test insertion with maximum vehicle speed
+insert_with_maximum_speed
+
+# test insertion with maximum vehicle speed
+insert_with_speedLimit_speedFactor0.8
+
+# test acceleration and deceleration when there are no vehicles around (speed limit change)
+free_speed
+
+# test insertion of a fast vehicle behind a slow vehicle
+insertion_speed
+
+# test insertion of a fast vehicle behind a slow vehicle
+insertion_speed_step0.2
+
+# make sure that there is no crash when defining a large minGap (#10471)
+minGap8

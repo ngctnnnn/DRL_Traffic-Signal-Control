@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2022-02-09 17:48:56 by Eclipse SUMO sumo Version v1_12_0+0407-89d3a2c
+This data file and the accompanying materials
+are made available under the terms of the Eclipse Public License v2.0
+which accompanies this distribution, and is available at
+http://www.eclipse.org/legal/epl-v20.html
+This file may also be made available under the following Secondary
+Licenses when the conditions for such availability set forth in the Eclipse
+Public License 2.0 are satisfied: GNU General Public License, version 2
+or later which is available at
+https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html
+SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="net.net.xml"/>
+        <route-files value="input_routes.rou.xml"/>
+        <additional-files value="input_additional.add.xml"/>
+    </input>
+
+    <output>
+        <write-license value="true"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="1000"/>
+    </time>
+
+    <processing>
+        <default.speeddev value="0"/>
+    </processing>
+
+    <report>
+        <xml-validation value="never"/>
+        <xml-validation.routes value="never"/>
+        <duration-log.disable value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</configuration>
+-->
+
+<linkData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/amitran/linkdata.xsd">
+    <timeSlice startTime="0" duration="300000">
+        <link id="32" amount="31">
+            <actorConfig id="0" amount="31"/>
+        </link>
+        <link id="33" amount="12">
+            <actorConfig id="0" amount="12"/>
+        </link>
+        <link id="34" amount="21">
+            <actorConfig id="0" amount="21"/>
+        </link>
+        <link id="35" amount="29">
+            <actorConfig id="0" amount="29"/>
+        </link>
+        <link id="36" amount="19">
+            <actorConfig id="0" amount="19"/>
+        </link>
+        <link id="37" amount="25">
+            <actorConfig id="0" amount="25"/>
+        </link>
+        <link id="38" amount="40">
+            <actorConfig id="0" amount="40"/>
+        </link>
+        <link id="39" amount="6">
+            <actorConfig id="0" amount="6"/>
+        </link>
+        <link id="40" amount="36">
+            <actorConfig id="0" amount="36"/>
+        </link>
+        <link id="41" amount="12">
+            <actorConfig id="0" amount="12"/>
+        </link>
+        <link id="42" amount="26">
+            <actorConfig id="0" amount="26"/>
+        </link>
+        <link id="43" amount="11">
+            <actorConfig id="0" amount="11"/>
+        </link>
+    </timeSlice>
+    <timeSlice startTime="300000" duration="300000">
+        <link id="32" amount="69">
+            <actorConfig id="0" amount="69"/>
+        </link>
+        <link id="33" amount="53">
+            <actorConfig id="0" amount="53"/>
+        </link>
+        <link id="34" amount="73">
+            <actorConfig id="0" amount="73"/>
+        </link>
+        <link id="35" amount="101">
+            <actorConfig id="0" amount="101"/>
+        </link>
+        <link id="36" amount="76">
+            <actorConfig id="0" amount="76"/>
+        </link>
+        <link id="37" amount="68">
+            <actorConfig id="0" amount="68"/>
+        </link>
+        <link id="38" amount="94">
+            <actorConfig id="0" amount="94"/>
+        </link>
+        <link id="39" amount="40">
+            <actorConfig id="0" amount="40"/>
+        </link>
+        <link id="40" amount="65">
+            <actorConfig id="0" amount="65"/>
+        </link>
+        <link id="41" amount="74">
+            <actorConfig id="0" amount="74"/>
+        </link>
+        <link id="42" amount="71">
+            <actorConfig id="0" amount="71"/>
+        </link>
+        <link id="43" amount="67">
+            <actorConfig id="0" amount="67"/>
+        </link>
+    </timeSlice>
+    <timeSlice startTime="600000" duration="300000">
+        <link id="32" amount="106">
+            <actorConfig id="0" amount="106"/>
+        </link>
+        <link id="33" amount="69">
+            <actorConfig id="0" amount="69"/>
+        </link>
+        <link id="34" amount="83">
+            <actorConfig id="0" amount="83"/>
+        </link>
+        <link id="35" amount="98">
+            <actorConfig id="0" amount="98"/>
+        </link>
+        <link id="36" amount="64">
+            <actorConfig id="0" amount="64"/>
+        </link>
+        <link id="37" amount="73">
+            <actorConfig id="0" amount="73"/>
+        </link>
+        <link id="38" amount="118">
+            <actorConfig id="0" amount="118"/>
+        </link>
+        <link id="39" amount="69">
+            <actorConfig id="0" amount="69"/>
+        </link>
+        <link id="40" amount="61">
+            <actorConfig id="0" amount="61"/>
+        </link>
+        <link id="41" amount="74">
+            <actorConfig id="0" amount="74"/>
+        </link>
+        <link id="42" amount="77">
+            <actorConfig id="0" amount="77"/>
+        </link>
+        <link id="43" amount="80">
+            <actorConfig id="0" amount="80"/>
+        </link>
+    </timeSlice>
+    <timeSlice startTime="900000" duration="100000">
+        <link id="32" amount="31">
+            <actorConfig id="0" amount="31"/>
+        </link>
+        <link id="33" amount="24">
+            <actorConfig id="0" amount="24"/>
+        </link>
+        <link id="34" amount="21">
+            <actorConfig id="0" amount="21"/>
+        </link>
+        <link id="35" amount="35">
+            <actorConfig id="0" amount="35"/>
+        </link>
+        <link id="36" amount="24">
+            <actorConfig id="0" amount="24"/>
+        </link>
+        <link id="37" amount="24">
+            <actorConfig id="0" amount="24"/>
+        </link>
+        <link id="38" amount="39">
+            <actorConfig id="0" amount="39"/>
+        </link>
+        <link id="39" amount="24">
+            <actorConfig id="0" amount="24"/>
+        </link>
+        <link id="40" amount="22">
+            <actorConfig id="0" amount="22"/>
+        </link>
+        <link id="41" amount="24">
+            <actorConfig id="0" amount="24"/>
+        </link>
+        <link id="42" amount="22">
+            <actorConfig id="0" amount="22"/>
+        </link>
+        <link id="43" amount="23">
+            <actorConfig id="0" amount="23"/>
+        </link>
+    </timeSlice>
+</linkData>

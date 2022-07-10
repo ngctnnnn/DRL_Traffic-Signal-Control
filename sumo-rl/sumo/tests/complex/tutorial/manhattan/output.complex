@@ -1,0 +1,23 @@
+Success.
+Reading up to time step: 0.00Reading up to time step: 200.00Success.
+Loading net-file from 'data/net.net.xml' ... done (221ms).
+Loading done.
+Simulation version v1_11_0+0462-d030828f8b9 started with time: 0.00
+Simulation ended at time: 1000.00
+Reason: The final simulation step has been reached.
+Performance: 
+ Duration: 2.41s
+ Real time factor: 415.628
+ UPS: 41559.019119
+Vehicles: 
+ Inserted: 100
+ Running: 100
+ Waiting: 0
+Statistics (avg):
+ RouteLength: 0.00
+ Speed: 0.00
+ Duration: 0.00
+ WaitingTime: 0.00
+ TimeLoss: 0.00
+ DepartDelay: 0.00
+

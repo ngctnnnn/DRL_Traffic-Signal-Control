@@ -1,0 +1,16 @@
+# tests tools\net\netcheck.py
+netcheck
+netdiff
+netmatch
+
+# convert net to kml
+net2kml
+
+# convert net to geojson
+net2geojson
+
+# convert net to jupedsim geometry
+net2jpsgeometry
+
+# convert net to SUMO polygons
+net2poly

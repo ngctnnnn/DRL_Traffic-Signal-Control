@@ -1,0 +1,74 @@
+buildType:
+  default: release
+  description: Switch between debug and release build type
+  choices:
+    debug:
+      short: Debug
+      long: Debug
+      buildType: Debug
+      settings:
+        CMAKE_BUILD_TYPE: Debug
+    minimal:
+      short: Minimal
+      long: Minimal build without optional libs / GUI
+      buildType: Release
+      settings:
+        CMAKE_BUILD_TYPE: Release
+        CHECK_OPTIONAL_LIBS: no
+        FOX_CONFIG: ''
+        BINARY_SUFFIX: M
+    profiling:
+      short: Profiling
+      long: Profiling
+      buildType: RelWithDebInfo
+      settings:
+        CMAKE_BUILD_TYPE: RelWithDebInfo
+        PROFILING: yes
+    release:
+      short: Release
+      long: Release
+      buildType: Release
+      settings:
+        CMAKE_BUILD_TYPE: Release
+
+pythonBindings:
+  default: 'default'
+  description: Enable Python bindings?
+  choices:
+    'default':
+      short: Python (def.)
+      long: Python (default)
+      settings:
+        ENABLE_PYTHON_BINDINGS: 'yes'
+    'brew-3.8':
+      short: Python 3.8 (brew)
+      long: macOS homebrew Python 3.8
+      settings:
+        ENABLE_PYTHON_BINDINGS: 'yes'
+        PYTHON_EXECUTABLE: "/usr/local/bin/python3.8"
+    'brew-3.9':
+      short: Python 3.9 (brew)
+      long: macOS homebrew Python 3.9
+      settings:
+        ENABLE_PYTHON_BINDINGS: 'yes'
+        PYTHON_EXECUTABLE: "/usr/local/bin/python3.9"
+    'no':
+      short: 'noPython'
+      long: noPython
+      settings:
+        ENABLE_PYTHON_BINDINGS: 'no'
+
+javaBindings:
+  default: 'no'
+  description: Enable Java bindings?
+  choices:
+    'no':
+      short: 'noJava'
+      long: noJava
+      settings:
+        ENABLE_JAVA_BINDINGS: 0
+    'default':
+      short: Java (def.)
+      long: Java default installation 
+      settings:
+        ENABLE_JAVA_BINDINGS: 'yes'

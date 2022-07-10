@@ -1,0 +1,26 @@
+symmetric_approach
+
+# 2 zipper lanes and a non-zipper lane
+3lanes
+
+# input longer flow to test different configurations
+variations
+
+# change results when adapting earlier
+variations_adaptDist_50
+
+# input longer flow to test different configurations
+variations_highspeed
+
+# input longer flow to test different configurations
+variations_dense
+
+# input longer flow to test different configurations
+variations_dense_adaptDist_50
+
+# input longer flow to test different configurations
+variations_subsecond
+variations_subsecond_IDM
+
+# two vehicles approach with different action step length offsets
+action_step_offset

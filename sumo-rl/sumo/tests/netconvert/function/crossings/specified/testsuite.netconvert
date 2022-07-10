@@ -1,0 +1,62 @@
+4_arm
+
+# cross a road
+2_arm
+
+# attempt to specify an invalid crossing
+2_arm_oneway_invalid
+
+# 3 arm junction where the crossing arm only has a sidewalk on the opposite side
+3_arm_1_opposite_sidewalk_1_crossing
+
+# 3 arm junction with 3 crossings
+3_arm_1_opposite_sidewalk_3_crossings
+
+# a service road (allowing pedestrians and delivery) enters a street with sidewalks at a T-junction
+3_arm_service_entering
+3_arm_unprioritized
+
+# 4 arm junction with crossings on all sides and custom tl indices
+sumonet_customTLIndex
+
+# 4 arm junction with crossings on all sides and custom primary and secondary tl indices
+sumonet_customTLIndex2
+
+# reimport .net.xml and keep the crossings with its custom shape
+sumonet_customshape
+
+# reimport .net.xml and keep the crossings and walkingareas with custom shape
+sumonet_custom_washape
+
+# reimport .net.xml and keep the crossings and walkingareas with custom shape
+sumonet_customshapes_shifted
+
+# a walkingarea should not try to follow the connection shape if there can be no adjacent road connection
+sharp_angle_incompatible_vclass
+
+# a pedestrian path crosses a street with sidewalks
+path_across_street
+
+# add crossings to two nodes which share a traffic light
+joined_tls
+patch_joined_tls_from_sumonet
+
+# build an uncontrolled crossing at a traffic light node
+uncontrolled_at_tls_node
+error_empty_edges
+across_3
+traffic_light_unregulated
+
+# remove a crossing
+discard
+discard_no_internal
+
+# discard all crossings
+discard_no_internal2
+
+# .tll.xml and .con.xml file are inconsistent
+inconsistent_tll
+custom_tll
+
+# railway crossing with pedestrian crossings
+rail_crossing

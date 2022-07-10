@@ -1,0 +1,11 @@
+-tp appdata=netedit.gui
+
+demandelements/person/inspect/type
+demandelements/person/inspect_selection/type
+demandelements/personflow/inspect/type
+demandelements/personflow/inspect_selection/type
+demandelements/stop/busstop/inspect_selection/tripid
+demandelements/stop/chargingstation/inspect_selection/tripid
+demandelements/stop/containerstop/inspect_selection/tripid
+demandelements/stop/lane/create/triggered_person
+demandelements/stop/parkingarea/inspect_selection/tripid

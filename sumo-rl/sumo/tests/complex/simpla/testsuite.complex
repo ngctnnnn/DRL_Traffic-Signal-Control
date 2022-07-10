@@ -1,0 +1,8 @@
+# Tests configuration parsing
+config
+
+# Tests basic platoon manager functionalities.
+platoon_manager
+
+# Tests the openGap method
+openGap

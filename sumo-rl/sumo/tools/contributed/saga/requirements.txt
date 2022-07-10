@@ -1,0 +1,8 @@
+folium
+lxml
+matplotlib
+numpy
+pyproj
+rtree
+shapely
+tqdm

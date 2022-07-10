@@ -1,0 +1,84 @@
+import_config_file:../config_all
+binary:test.py
+use_case_record_mode:GUI
+virtual_display_wm_executable:fluxbox
+virtual_display_extra_args:-dpi 100 -shmem
+
+copy_test_path:test.py
+copy_test_path:input_net.netccfg
+copy_test_path:input_net.net.xml
+copy_test_path:input_net.con.xml
+copy_test_path:input_net.edg.xml
+copy_test_path:input_net.nod.xml
+copy_test_path:input_net.tll.xml
+copy_test_path:input_net.net.xml
+copy_test_path:input_net_loadedmanually.net.xml
+copy_test_path:input_additionals.add.xml
+copy_test_path:input_routes.rou.xml
+copy_test_path:input_vtypes.rou.xml
+copy_test_path:input_datas.dat.xml
+copy_test_path:gui-settings.xml
+copy_test_path:berlin_icon.ico
+copy_test_path:fileA.txt
+copy_test_path:fileB.txt
+copy_test_path_merge:selection.txt
+copy_test_path_merge:myOwnFilenameRerouter.txt
+copy_test_path:sumo.sumocfg
+copy_test_path:errorScreenshot.png
+
+[collate_file]
+net:net.net.xml
+netcon:net.con.xml
+netedg:net.edg.xml
+netnod:net.nod.xml
+nettll:net.tll.xml
+additionals:additionals.xml
+routes:routes.xml
+datas:datas.xml
+guisettingsoutput:guisettingsoutput.xml
+cfg:config.cfg
+log:log.txt
+selection:selection.txt
+errorScreenshot:errorScreenshot.png
+
+[run_dependent_text]
+net:<!--{[->]}-->
+additionals:<!-- generated{[->]}-->
+additionals:{INTERNAL writedir}{REPLACE <TEXTTEST_SANDBOX>}
+additionals:\\{REPLACE /}
+routes:<!-- generated{[->]}-->
+routes:{INTERNAL writedir}{REPLACE <TEXTTEST_SANDBOX>}
+routes:\\{REPLACE /}
+datas:<!-- generated{[->]}-->
+datas:{INTERNAL writedir}{REPLACE <TEXTTEST_SANDBOX>}
+datas:\\{REPLACE /}
+netcon:<!--{[->]}-->
+netedg:<!--{[->]}-->
+netnod:<!--{[->]}-->
+nettll:<!--{[->]}-->
+output:\[log\]
+output:\[info\]
+output:+++
+output:\\{REPLACE /}
+output:script{LINES 1}
+output:  File{LINES 1}
+output:{INTERNAL writedir}
+guisettingsoutput:<scheme{[->]}</scheme>
+errors:Leaked object at 
+errors:*** 9 leaks found
+errors:delete: freed
+errors:java{LINES 1}
+errors:Java{LINES 1}
+errors:Could not load{LINES 1}
+errors:Debug: Modules:
+errors:{INTERNAL writedir}{REPLACE <TEXTTEST_SANDBOX>}
+errors:\\{REPLACE /}
+log:{INTERNAL writedir}{REPLACE <TEXTTEST_SANDBOX>}
+log:\\{REPLACE /}
+
+[floating_point_tolerance]
+net:0.0101
+output:0.0101
+errors:0.0101
+additionals:0.0101
+routes:0.0101

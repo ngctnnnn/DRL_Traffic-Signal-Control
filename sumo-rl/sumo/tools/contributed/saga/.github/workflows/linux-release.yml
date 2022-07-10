@@ -1,0 +1,244 @@
+name: linux-release
+
+on:
+  push:            # run on push events
+    paths-ignore:  # but ignore everything in the docs subfolder
+      - 'docs/**'
+    branches:
+      - '**'
+    tags:
+      - '*'
+  pull_request:    # run on pull requests
+    paths-ignore:  # but ignore everything in the docs subfolder
+      - 'docs/**'
+  schedule:
+    - cron:  '0 0 * * FRI'
+
+jobs:
+  Wildau:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Cloning SAGA
+      uses: actions/checkout@v2
+
+    - name: Installing SUMO
+      run: |
+        sudo add-apt-repository ppa:sumo/stable
+        sudo apt-get update
+        sudo apt-get install sumo sumo-tools
+
+    - name: Installing SAGA Requirements
+      run: |
+        sudo pip3 install --no-cache-dir -r requirements.txt
+
+    - name: Preparing Tests
+      run: |
+        gunzip tests/*.gz
+
+    - name: Running Wildau Test
+      run: |
+        export SUMO_HOME='/usr/share/sumo'
+        export SINGLETAZ='--single-taz'
+        export TAZLVL9='--admin-level 9'
+        export COMMON='--local-defaults --processes 2 --population 1000 --taxi-fleet 100'
+        ./scenarioFromOSM.py --osm tests/wildau_osm.xml --out tests/wildau $COMMON $SINGLETAZ
+
+    - name: Upload Wildau Test
+      if: ${{ failure() }}
+      uses: actions/upload-artifact@v2
+      with:
+          name: Wildau
+          path: |
+            tests/wildau
+          retention-days: 7
+
+  DLR:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Cloning SAGA
+      uses: actions/checkout@v2
+
+    - name: Installing SUMO
+      run: |
+        sudo add-apt-repository ppa:sumo/stable
+        sudo apt-get update
+        sudo apt-get install sumo sumo-tools
+
+    - name: Installing SAGA Requirements
+      run: |
+        sudo pip3 install --no-cache-dir -r requirements.txt
+
+    - name: Preparing Tests
+      run: |
+        gunzip tests/*.gz
+
+    - name: Running DLR Test
+      run: |
+        export SUMO_HOME='/usr/share/sumo'
+        export SINGLETAZ='--single-taz'
+        export TAZLVL9='--admin-level 9'
+        export COMMON='--local-defaults --processes 2 --population 1000 --taxi-fleet 100'
+        ./scenarioFromOSM.py --osm tests/dlr_osm.xml --out tests/dlr $COMMON $SINGLETAZ
+
+    - name: Upload DLR Test
+      if: ${{ failure() }}
+      uses: actions/upload-artifact@v2
+      with:
+          name: DLR
+          path: |
+            tests/dlr
+          retention-days: 7
+
+  Docklands:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Cloning SAGA
+      uses: actions/checkout@v2
+
+    - name: Installing SUMO
+      run: |
+        sudo add-apt-repository ppa:sumo/stable
+        sudo apt-get update
+        sudo apt-get install sumo sumo-tools
+
+    - name: Installing SAGA Requirements
+      run: |
+        sudo pip3 install --no-cache-dir -r requirements.txt
+
+    - name: Preparing Tests
+      run: |
+        gunzip tests/*.gz
+
+    - name: Running Docklands Test
+      run: |
+        export SUMO_HOME='/usr/share/sumo'
+        export SINGLETAZ='--single-taz'
+        export TAZLVL9='--admin-level 9'
+        export COMMON='--local-defaults --processes 2 --population 1000 --taxi-fleet 100'
+        ./scenarioFromOSM.py --osm tests/docklands_osm.xml --out tests/docklands --lefthand $COMMON $TAZLVL9
+
+    - name: Upload Docklands Test
+      if: ${{ failure() }}
+      uses: actions/upload-artifact@v2
+      with:
+          name: Docklands
+          path: |
+            tests/docklands
+          retention-days: 7
+
+  Sophia:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Cloning SAGA
+      uses: actions/checkout@v2
+
+    - name: Installing SUMO
+      run: |
+        sudo add-apt-repository ppa:sumo/stable
+        sudo apt-get update
+        sudo apt-get install sumo sumo-tools
+
+    - name: Installing SAGA Requirements
+      run: |
+        sudo pip3 install --no-cache-dir -r requirements.txt
+
+    - name: Preparing Tests
+      run: |
+        gunzip tests/*.gz
+
+    - name: Running Sophia Antipolis Test
+      run: |
+        export SUMO_HOME='/usr/share/sumo'
+        export SINGLETAZ='--single-taz'
+        export TAZLVL9='--admin-level 9'
+        export COMMON='--local-defaults --processes 2 --population 1000 --taxi-fleet 100'
+        ./scenarioFromOSM.py --osm tests/sophia_osm.xml --out tests/sophia $COMMON $TAZLVL9
+
+    - name: Upload Sophia Test
+      if: ${{ failure() }}
+      uses: actions/upload-artifact@v2
+      with:
+          name: Sophia
+          path: |
+            tests/sophia
+          retention-days: 7
+
+  Riyadh:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Cloning SAGA
+      uses: actions/checkout@v2
+
+    - name: Installing SUMO
+      run: |
+        sudo add-apt-repository ppa:sumo/stable
+        sudo apt-get update
+        sudo apt-get install sumo sumo-tools
+
+    - name: Installing SAGA Requirements
+      run: |
+        sudo pip3 install --no-cache-dir -r requirements.txt
+
+    - name: Preparing Tests
+      run: |
+        gunzip tests/*.gz
+
+    - name: Running Riyadh Test
+      run: |
+        export SUMO_HOME='/usr/share/sumo'
+        export SINGLETAZ='--single-taz'
+        export TAZLVL9='--admin-level 9'
+        export COMMON='--local-defaults --processes 2 --population 1000 --taxi-fleet 100'
+        ./scenarioFromOSM.py --osm tests/riyadh_osm.xml --out tests/riyadh $COMMON $TAZLVL9
+
+    - name: Upload Riyadh Test
+      if: ${{ failure() }}
+      uses: actions/upload-artifact@v2
+      with:
+          name: Riyadh
+          path: |
+            tests/riyadh
+          retention-days: 7
+
+  Kyoto:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Cloning SAGA
+      uses: actions/checkout@v2
+
+    - name: Installing SUMO
+      run: |
+        sudo add-apt-repository ppa:sumo/stable
+        sudo apt-get update
+        sudo apt-get install sumo sumo-tools
+
+    - name: Installing SAGA Requirements
+      run: |
+        sudo pip3 install --no-cache-dir -r requirements.txt
+
+    - name: Preparing Tests
+      run: |
+        gunzip tests/*.gz
+
+    - name: Running Kyoto Test
+      run: |
+        export SUMO_HOME='/usr/share/sumo'
+        export SINGLETAZ='--single-taz'
+        export TAZLVL9='--admin-level 9'
+        export COMMON='--local-defaults --processes 2 --population 1000 --taxi-fleet 100'
+        ./scenarioFromOSM.py --osm tests/kyoto_osm.xml --out tests/kyoto --lefthand $COMMON $TAZLVL9
+
+    - name: Upload Kyoto Test
+      if: ${{ failure() }}
+      uses: actions/upload-artifact@v2
+      with:
+          name: Kyoto
+          path: |
+            tests/kyoto
+          retention-days: 7

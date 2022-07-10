@@ -1,0 +1,28 @@
+basic
+
+# using parameters begin and end
+begin_end
+
+# Copy of basic
+pt_routes_from_ptlines_file
+random_begin
+parking
+types
+stop_duration
+
+# write with human readable time
+hrtime
+name_missing
+few_stops
+
+# input taken from netconvert/function/railway/repair/stops_reverse_en_route/
+reverse_at_stop
+
+# Copy of basic
+night
+
+# extend train route beyond terminal stops (for incomplete line)
+extendFringe
+
+# test more route types
+share_taxi_minibus
