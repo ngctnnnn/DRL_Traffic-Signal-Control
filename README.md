@@ -98,15 +98,15 @@ Total the differences between total incoming lanes density and total outgoing la
 
 - **Reward function**            
 
-Reward at time $t$ is defined as follows:
+    - Reward at time $t$ is defined as follows:
 
-```math
-    \mathcal{R}_t = D_t - D_{t + 1}
-```
+        ```math
+            \mathcal{R}_t = D_t - D_{t + 1}
+        ```
 
-in which, $D_t$ and $D_{t + 1}$ are total waiting time of stopped vehicles at intersections at time $t$ and time $t + 1$, respectively. 
+        in which, $D_t$ and $D_{t + 1}$ are total waiting time of stopped vehicles at intersections at time $t$ and time $t + 1$, respectively. 
 
-- In other words, the reward function is defined as how much the total delay (sum of the waiting times of all vehicles) changed in relation to the previous time step. The immediate reward value will be larger when the total waiting time in the next step is shorter than the previous step. In fact, the good policies often have the immediate reward fluctuates around zero, because then the waiting time will not change. However, whether it is good or not should be confirmed by observing other metrics such as average speed, totally stopped,...
+    - In other words, the reward function is defined as how much the total delay (sum of the waiting times of all vehicles) changed in relation to the previous time step. The immediate reward value will be larger when the total waiting time in the next step is shorter than the previous step. In fact, the good policies often have the immediate reward fluctuates around zero, because then the waiting time will not change. However, whether it is good or not should be confirmed by observing other metrics such as average speed, totally stopped,...
 
 
 ### 4. Results
